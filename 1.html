@@ -1,19 +1,111 @@
 <!doctype html>
-<html>
-  <head>
-    <title>WEB1 - html</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1><a href="main.html">WEB</a></h1>
-    <ol>
-      <li><a href="1.html">HTML</a></li>
-      <li><a href="2.html">CSS</a></li>
-      <li><a href="3.html">JavaScript</a></li>
-    </ol>
-    <h2>HTML</h2>
-    <p>하이퍼텍스트 마크업 언어(HyperText Markup Language, HTML, 문화어: 초본문표
-      식달기언어, 하이퍼본문표식달기언어)는 웹 페이지를 위한 지배적인 마크업 언어다.
-    </p>
-  </body>
-  </html>
+  <html>
+    <head>
+      <title>WEB1 - main</title>
+      <meta charset="utf-8">
+      <style>
+        body{
+          maring:0;
+        }
+        #active{
+          display: grid;
+          grid-template-columns: 150px 1fr;
+        }
+        #article{
+          padding-left:25px;
+        }
+        a {
+          color:black;
+          text-decoration: none;
+        }
+
+        h1 {
+          font-size:45px;
+          text-align: center;
+          border-bottom:5px solid gray;
+          margin:0;
+          padding:20px;
+        }
+        ol{
+          border-right:5px solid gray;
+          width:100px;
+          margin:0;
+          padding:32px;
+          font-size:20px;
+          font-weight:600;
+        }
+
+        @media(max-width:800px){
+          #active{
+            display: block;
+          }
+          ol{
+            border-right:none;
+          }
+          h1 {
+            border-bottom:none;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <h1><a href="main.html">WEB</a></h1>
+      <div id="active">
+        <ol>
+          <li><a href="1.html">HTML</a></li><br>
+          <li><a href="2.html"> CSS</a></li><br>
+          <li><a href="3.html">JavaScript</a></li>
+        </ol>
+  <!--
+      <h1><a href="main.html"><font color="red">WEB</font></a></h1>
+      <ol>
+        <li><a href="1.html"><font color="red">HTML</font></a></li>
+        <li><a href="2.html"><font color="red">CSS</font></a></li>
+        <li><a href="3.html"><font color="red">JavaScript</font></a></li>
+      </ol>
+    -->
+        <div id="article">
+            <h2>HTML이란</h2>
+            <h2>하이퍼텍스트 마크업 언어(HyperText Markup Language, HTML, 문화어: 초본문표
+              식달기언어, 하이퍼본문표식달기언어)는 웹 페이지를 위한 지배적인 마크업 언어다.</font></h2>
+        </div>
+      </div>
+
+      <p>
+    <div id="disqus_thread"></div>
+  <script>
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+  /*
+  var disqus_config = function () {
+  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  */
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://web1-rvpi7eiong.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </p>
+  <p>
+    <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/603345229c4f165d47c5a948/1ev44c4gq';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+  </p>
+    </body>
+    </html>
